@@ -1,0 +1,26 @@
+[project]
+name = "multimodalvideoprediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium[all]>=1.2.3",
+    "imageio>=2.37.2",
+    "kornia>=0.8.2",
+    "lejepa",
+    "lpips>=0.1.4",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+    "opencv-python>=4.11.0.86",
+    "scipy>=1.16.3",
+    "setuptools==80",
+    "tensordict>=0.12.3",
+    "timm>=1.0.24",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.sources]
+lejepa = { git = "https://github.com/rbalestr-lab/lejepa" }

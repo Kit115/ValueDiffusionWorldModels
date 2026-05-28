@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# exclude all checkpoints
+*.pth
+
+# excludes all buffer checkpoints
+*.npz
+
+# excludes all experiment results as we don't want to melt the github servers
+experiments/
+
+
+# individual files used for porting
+convert_checkpoint.py
+
+
+# individual files that aren't ported yet
+evaluation.py
+
+
+

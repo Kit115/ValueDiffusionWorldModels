@@ -1,0 +1,47 @@
+train:
+  num_epochs:          5000
+  updates_per_epoch:   60
+  seed_trajectories:   10
+  batch_size:          256
+  checkpoint_interval: 100
+  log_window_size:     100
+  buffer_capacity:     1000
+  trajectory_length:   600
+
+  # exploration-noise schedule
+  max_std:     0.25
+  min_std:     0.05
+  hold_steps:  250
+  decay_steps: 250
+
+algorithm:
+  device: cuda:0
+
+  dynamics_type: diffusion
+  diff_steps:    1000
+  num_diff_steps: 1
+
+  state_representation_dim: 64
+
+  act_chunks: 3
+  act_dim:    3
+  gamma:      0.99
+
+  pop_size:      512
+  n_elite:       64
+  n_iters:       10
+  horizon:       5
+  cem_std_floor: 1.0e-6
+
+  lr:             3.0e-4
+  polyak:         0.995
+  grad_clip_norm: 10.0
+
+  lam:                  0.05
+  detach_reward_inputs: false
+  rew_coef:             0.01
+  detach_v_inputs:      false
+  v_coef:               0.01
+
+  sigreg_n_points:   17
+  sigreg_num_slices: 1024
