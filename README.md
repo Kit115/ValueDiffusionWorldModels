@@ -7,7 +7,7 @@ Training experiments managed with [uv](https://docs.astral.sh/uv/) and YAML conf
 Clone the repo and create the environment from the lockfile. With `uv.lock` and `pyproject.toml` present, this installs the exact pinned dependencies:
 
 ```bash
-git clone https://github.com/Kit115/ValueDiffusionWorldModels.git
+git clone git@github.com:Kit115/ValueDiffusionWorldModels.git
 cd ValueDiffusionWorldModels
 uv sync
 ```
