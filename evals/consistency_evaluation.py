@@ -28,7 +28,7 @@ def calculate_td_errors(tdmpc, states, actions):
     return one_step_errors
 
 def main():
-    num_eval_samples = 3
+    num_eval_samples = 10000
     rng = np.random.default_rng(seed=759)
     base_path   = "experiments"
     device      = "cuda:0"

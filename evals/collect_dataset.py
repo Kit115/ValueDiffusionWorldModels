@@ -54,8 +54,8 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--num-train-trajs",    type=int,   default=5)
-    parser.add_argument("--num-val-trajs",      type=int,   default=2)
+    parser.add_argument("--num-train-trajs",    type=int,   default=2500)
+    parser.add_argument("--num-val-trajs",      type=int,   default=250)
     parser.add_argument("--dataset-name",       type=str,   default="default_dataset")
     parser.add_argument("--config-name",        type=str,   default="default_diffusion")
     parser.add_argument("--run-name",           type=str,   default="run_1")
